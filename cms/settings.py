@@ -111,7 +111,9 @@ TEMPLATE_DIRS = (
 )
 
 INSTALLED_APPS = (
+	'tagging',
 	'cms.search',
+	'coltrane',
     'django.contrib.auth',
     'django.contrib.contenttypes',
     'django.contrib.sessions',
