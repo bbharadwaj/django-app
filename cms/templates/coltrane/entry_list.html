@@ -1,0 +1,21 @@
+
+{% for object in object_list %}
+	<html>
+	<head>
+		<title>{{ object.title }}</title>
+	</head>
+	<body>
+		
+		<h1>{{ object.title }}</h1>
+		<p>Published on {{ object.pub_date|date:"F j, Y" }}</p>
+		<h3><p>{{object.body}}</p></h3></br>
+		<p>Posted by {{object.author}}</p></br>
+		{% if object.tags %}
+			<p>Tags : {{object.tags}}</p>
+		{%else %}
+			<p>Tags : No Tags</p>
+		{% endif %}
+			
+	</body>
+	</html>
+{% endfor %}

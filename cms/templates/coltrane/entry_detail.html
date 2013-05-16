@@ -1,15 +1,15 @@
 <html>
 <head>
-	<title>{{ entry.title }}</title>
+	<title>{{ object.title }}</title>
 </head>
 <body>
 	
-	<h1>{{ entry.title }}</h1>
-	<p>Published on {{ entry.pub_date|date:"F j, Y" }}</p>
-	<h3><p>{{entry.body}}</p></h3></br>
-	<p>Posted by {{entry.author}}</p></br>
-	{% if entry.tags %}
-		<p>Tags : {{entry.tags}}</p>
+	<h1>{{ object.title }}</h1>
+	<p>Published on {{ object.pub_date|date:"F j, Y" }}</p>
+	<h3><p>{{object.body}}</p></h3></br>
+	<p>Posted by {{object.author}}</p></br>
+	{% if object.tags %}
+		<p>Tags : {{object.tags}}</p>
 	{%else %}
 		<p>Tags : Mo Tags</p>
 	{% endif %}

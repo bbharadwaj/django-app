@@ -110,6 +110,9 @@ TEMPLATE_DIRS = (
 	"C:/cms/cms/templates/"
 )
 
+DELICIOUS_USER = 'bbharadwaj'
+DELICIOUS_PASSWORD = 'pydelicious'
+
 INSTALLED_APPS = (
 	'tagging',
 	'cms.search',
@@ -128,6 +131,8 @@ INSTALLED_APPS = (
 	
 	
 )
+
+
 
 
 # A sample logging configuration. The only tangible logging
