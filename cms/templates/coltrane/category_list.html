@@ -1,7 +1,19 @@
-<h2>Categories</h2>
+<html>
+<head>
+	<title>Categories</title>
+	<link href="{{ STATIC_URL }}bootstrap/css/bootstrap.min.css" rel="stylesheet" media="screen">
+</head>
+<body>
+
 {% for object in object_list %}
 	<p><a href="{{ object.title}}">{{ object.title }}</a></p>
 {% endfor %}
+	
+</body>
+</html>
+
+
+
 
 
 

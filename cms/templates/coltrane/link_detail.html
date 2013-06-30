@@ -1,4 +1,13 @@
-    <h2>{{ object.title }}</h2>
+<html>
+<head>
+	<title>{{ object.title }}</title>
+	<link href="{{ STATIC_URL }}bootstrap/css/bootstrap.min.css" rel="stylesheet" media="screen">
+</head>
+<body>
+
+
+
+
     
     <p>{{ object.description_html|safe }}</p>
 
@@ -24,3 +33,11 @@
     {% else %}
         <p>This link doesn't have any tags.</p>
     {% endif %}
+	
+</body>
+</html>
+
+
+
+
+
